@@ -3,6 +3,7 @@
   --secondary-color: #191c26;
   --text-primery: #303030;
   --text-secondary: #9da4bd;
+  --text-primery-lighten:color: #555555;
 }
 body {
   font-family: "Open Sans";
@@ -11,14 +12,22 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  
 }
 a {
   text-decoration: none;
 }
+
+.suptitle-primary,
 .subtitle-secondary {
+
   font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
+font-size: 11px;
+line-height: 15px;
+text-transform: uppercase;
+color: var( --text-primery);
+}
+.subtitle-secondary {
   color: #9da4bd99;
 }
 h2.section-title {
@@ -38,6 +47,23 @@ h2.section-title.lighten {
   font-size: 18px;
   line-height: 30px;
 }
+/* Navbar style here */
+nav.navbar .btn-box {
+
+  display: inline-block;
+}
+nav.navbar{
+  outline: 1px solid rgb(172, 138, 65);
+}
+
+.nav-links{
+  background: aqua;
+  display: inline-block;
+}
+
+.nav-links li {
+  display: inline-block;
+}
 
 a.nav-link {
   font-weight: 600;
@@ -45,6 +71,38 @@ a.nav-link {
   line-height: 16px;
   color: #ffffff;
 }
-a.nav-link:hover {
+a.nav-link:hover,
+.social-box a:hover {
   color: var(--primery-color);
+}
+
+p.section-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var( --text-primery-lighten);
+}
+
+
+.social-link {
+  font-weight: 600;
+font-size: 11px;
+line-height: 15px;
+color: var(--text-primery);
+}
+
+.primery-btn {
+  font-weight: 600;
+  font-size: 12px;
+ line-height: 16px;
+ text-transform: uppercase;
+ border: 1px solid #FF6C00;
+box-sizing: border-box;
+border-radius: 25px;
+padding: 12px 20px;
+color: #ffffff;
+}
+
+.primery-btn.darken {
+  color:var(--text-primery);
 }
