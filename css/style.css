@@ -16,3 +16,7 @@ h2.section-title {
   line-height: 49px;
   color: var(--text-primery);
 }
+
+h2.section-title.lighten {
+  color: #ffffff;
+}
