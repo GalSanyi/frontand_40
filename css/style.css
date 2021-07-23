@@ -7,6 +7,7 @@
 }
 body {
   font-family: "Open Sans";
+  margin: 0;
 }
 ul {
   list-style: none;
@@ -48,22 +49,51 @@ h2.section-title.lighten {
   font-size: 18px;
   line-height: 30px;
 }
+.header{
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap
+}
+.slider {
+  width: ;
+  height: ;
+
+}
 /* Navbar style here */
+.nav-holder {
+  display: flex;
+  align-items: center;
+  height: 56px;
+}
+.logo-img {
+  width:68px ;
+  height: 56px;
+  margin: 32px;
+  margin: 0 30px;
+
+}
 nav.navbar .btn-box {
 
-  display: inline-block;
 }
 nav.navbar{
   outline: 1px solid rgb(172, 138, 65);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+
 }
 
 .nav-links{
   background: aqua;
-  display: inline-block;
+  display: flex;
+ 
 }
 
 .nav-links li {
-  display: inline-block;
+margin: 0 40px;
+  
 }
 
 a.nav-link {
@@ -102,20 +132,22 @@ p.section-description {
   border-radius: 25px;
   padding: 12px 20px;
   color: #ffffff;
+  display: block;
 }
 
 .primery-btn.darken {
   color:var(--text-primery);
 }
-
+.slid {
+  background-image: url(../images/Slider3.jpg);
+}
 
 /* Prici style */
   .price-list {
-    display: inline-block;
-  }
+    
 
   .price-item p, .price-item span {
-    display: inline-block;
+   
     font-size: 18px;
     line-height: 30px;
     color: var(--text-secondary);
@@ -126,7 +158,7 @@ p.section-description {
   background: #F7F7F7;
   width: 170px;
   height: 133px;
-  display: inline-block;
+  
 
 }
 .number-box p, .number-box span {
@@ -163,3 +195,6 @@ color: var(--primery-color);
   line-height: 30px;
   color: var(--text-secondary);
 }
+
+
+
