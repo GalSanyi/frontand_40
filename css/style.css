@@ -19,14 +19,15 @@ a {
 }
 
 .suptitle-primary,
-.subtitle-secondary {
+.suptitle-secondary {
 
   font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-text-transform: uppercase;
-color: var( --text-primery);
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var( --text-primery);
 }
+
 .subtitle-secondary {
   color: #9da4bd99;
 }
@@ -86,23 +87,79 @@ p.section-description {
 
 .social-link {
   font-weight: 600;
-font-size: 11px;
-line-height: 15px;
-color: var(--text-primery);
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--text-primery);
 }
 
 .primery-btn {
   font-weight: 600;
   font-size: 12px;
- line-height: 16px;
- text-transform: uppercase;
- border: 1px solid #FF6C00;
-box-sizing: border-box;
-border-radius: 25px;
-padding: 12px 20px;
-color: #ffffff;
+  line-height: 16px;
+  text-transform: uppercase;
+  border: 1px solid #FF6C00;
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 12px 20px;
+  color: #ffffff;
 }
 
 .primery-btn.darken {
   color:var(--text-primery);
+}
+
+
+/* Prici style */
+  .price-list {
+    display: inline-block;
+  }
+
+  .price-item p, .price-item span {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text-secondary);
+  }
+/* Why us styles */
+
+.number-box {
+  background: #F7F7F7;
+  width: 170px;
+  height: 133px;
+  display: inline-block;
+
+}
+.number-box p, .number-box span {
+  display: block;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 57px;
+  text-align: center;
+  color: var(--text-primery);
+}
+
+.number-box span {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+}
+/* master card */
+.master-card p {
+font-size: 18px;
+line-height: 25px;
+color:var(--text-primery);
+
+}
+
+.master-card span {
+  font-size: 14px;
+line-height: 19px;
+color: var(--primery-color);
+}
+/* Footer styles */
+.footer-contacts {
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
 }
