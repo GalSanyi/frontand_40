@@ -69,19 +69,21 @@ h2.section-title.lighten {
 .logo-img {
   width:68px ;
   height: 56px;
-  margin: 32px;
-  margin: 0 30px;
+  margin: 0 32px;
+  
 
 }
 nav.navbar .btn-box {
 
 }
-nav.navbar{
+.navbar{
+  width: 100%;
   outline: 1px solid rgb(172, 138, 65);
   padding-top: 30px;
   display: flex;
-  justify-content: space-around;
-  position: absolute;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
 
 }
 
@@ -132,18 +134,19 @@ p.section-description {
   border-radius: 25px;
   padding: 12px 20px;
   color: #ffffff;
-  display: block;
+  display: inline-block;
 }
 
 .primery-btn.darken {
   color:var(--text-primery);
 }
-.slid {
+/* .slid {
+  width: calc(100% - 155px);
   background-image: url(../images/Slider3.jpg);
-}
+} */
 
 /* Prici style */
-  .price-list {
+  .price-list 
     
 
   .price-item p, .price-item span {
