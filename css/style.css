@@ -32,6 +32,9 @@ a {
 .subtitle-secondary {
   color: #9da4bd99;
 }
+.subtitle-secondary::before {
+  content: '':
+}
 h2.section-title {
   font-family: Raleway;
   font-weight: bold;
@@ -50,15 +53,24 @@ h2.section-title.lighten {
   line-height: 30px;
 }
 .header{
-  width: 100wh;
   height: 100vh;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
+  
 }
-.slider {
-  width: ;
-  height: ;
 
+  
+.slider {
+  background-image:url(../images/Slider3.jpg);
+  width: calc(100% - 155px);
+
+ 
+}
+.sidebar {
+  width: 155px;
+  height: 100vh;
+  background-color: #fff;
 }
 /* Navbar style here */
 .nav-holder {
@@ -76,14 +88,13 @@ h2.section-title.lighten {
 nav.navbar .btn-box {
 
 }
-.navbar{
+nav .navbar{
   width: 100%;
   outline: 1px solid rgb(172, 138, 65);
   padding-top: 30px;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  top: 0;
 
 }
 
@@ -140,10 +151,7 @@ p.section-description {
 .primery-btn.darken {
   color:var(--text-primery);
 }
-/* .slid {
-  width: calc(100% - 155px);
-  background-image: url(../images/Slider3.jpg);
-} */
+
 
 /* Prici style */
   .price-list 
