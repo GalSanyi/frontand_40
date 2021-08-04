@@ -326,11 +326,28 @@ background-attachment: fixed;
 }
 
 /* Footer styles here */
-
+.footer {
+ width: 100%;
+ min-height: 600px; 
+ height: auto;
+background-color:var( --secondary-color);
+}
 .footer-contacts{
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: var(--text-secondary);
+  padding: 0 50px;
+  display: flex;
+}
+.footer-form .footer-contacts {
+  width: 50%;
+  height: inherit;
+}
+.footer-contacts {
+  font-weight: normal;
+  font-style: 18px;
+  line-height: 30px;
+  color: var(var(--text-secondary););
 }
 © 2021 GitHub, Inc.
