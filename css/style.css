@@ -308,7 +308,7 @@ background-attachment: fixed;
 .master-social-link{
   width: 44px;
   height: 44px;
- 
+  background-color: #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -326,28 +326,81 @@ background-attachment: fixed;
 }
 
 /* Footer styles here */
-.footer {
- width: 100%;
- min-height: 600px; 
- height: auto;
-background-color:var( --secondary-color);
+
+.footer{
+  width: 100%;
+  min-height: 640px;
+  height: auto;
+  background-color: var(--secondary-color);
+  padding: 0 50px;
+  display: flex;
+  background-image: url(../images/Footer/footer-bg.png);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  color: var(--text-secondary);
+
 }
+
+.footer-form, .footer-contacts{
+  width: 50%;
+  height: inherit;
+}
+
+.footer-contacts{
+  padding: 130px 105px 130px 100px;
+}
+
+.contacts-box{
+  padding-left: 40px;
+}
+
+.contacts-box > adress{
+  position: relative;
+}
+.contacts-box > adress::before,
+.contacts-box > a::before{
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -41px;
+  top: 3px;
+}
+
+.contacts-box > adress::before{
+  background-image: url(../images/icons/map-pin.svg);
+}
+
+.contacts-box a:nth-of-type(1)::before{
+  background-image: url(../images/icons/phone.svg);
+}
+
+.contacts-box a:nth-last-of-type(1)::before{
+  background-image: url(../images/icons/mail.svg);
+}
+
+
+.contacts-box > a{
+  position: relative;
+  display: block;
+  color: var(--text-secondary);
+}
+
+.copyright{
+  width: 100%;
+  min-height: 125px;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
 .footer-contacts{
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   color: var(--text-secondary);
-  padding: 0 50px;
-  display: flex;
 }
-.footer-form .footer-contacts {
-  width: 50%;
-  height: inherit;
-}
-.footer-contacts {
-  font-weight: normal;
-  font-style: 18px;
-  line-height: 30px;
-  color: var(var(--text-secondary););
-}
-© 2021 GitHub, Inc.
